@@ -1,4 +1,2 @@
 #[test]
-fn will_this_run() {
-
-}
+fn will_this_run() {}
