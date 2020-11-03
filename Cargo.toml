@@ -1,0 +1,36 @@
+[package]
+name = "async-ringbuf"
+version = "0.1.0"
+authors = ["Bryan McCoid <bryan.mccoid@gmail.com>"]
+edition = "2018"
+
+######### properties #########
+description = "..."
+documentation = "..."
+homepage = "..."
+repository = "..."
+readme = "README.md"
+license = "MIT"
+license-file = "LICENSE"
+
+[badges]
+codecov = { repository = "...", branch = "master", service = "github" }
+maintenance = { status = "experimental" }
+
+[dependencies]
+
+######### logging #########
+log = "0.4.6" # logging
+anyhow = "1.0"
+
+######### utilities #########
+bitflags = "1.2"
+# crossbeam-utils = "0.8"
+futures = "0.3"
+tokio = { version = "0.2.22", features = ["full", "parking_lot"] }
+bytes = "0.5.4"
+
+######### Tracing #########
+tracing = "0.1.15"
+tracing-subscriber = "0.2.4"
+tracing-futures = { version = "0.2.4", features = ["std", "std-future", "tokio", "futures-03"]}
